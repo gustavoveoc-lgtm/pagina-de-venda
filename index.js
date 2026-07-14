@@ -45,6 +45,15 @@ function initAppShowcase() {
                     screen.classList.add('active');
                 }
             });
+
+            // Update virtual bottom navbar items active state
+            const mockNavItems = document.querySelectorAll('.smartphone-container .mock-nav-item');
+            mockNavItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.id === `mock-nav-${targetScreenId}`) {
+                    item.classList.add('active');
+                }
+            });
         });
     });
 }

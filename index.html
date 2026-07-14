@@ -143,11 +143,13 @@
                                 </div>
                             </div>
 
-                            <div class="mock-app-navbar">
-                                <div class="mock-nav-item active"><span>🏠</span><span style="font-size: 8px;">Home</span></div>
-                                <div class="mock-nav-item"><span>🏋️‍♀️</span><span style="font-size: 8px;">Treinos</span></div>
-                                <div class="mock-nav-item"><span>🥗</span><span style="font-size: 8px;">Nutrição</span></div>
-                                <div class="mock-nav-item"><span>✨</span><span style="font-size: 8px;">Desafio</span></div>
+                            <div class="mock-app-navbar" style="justify-content: space-between; padding: 0 8px;">
+                                <div class="mock-nav-item active"><span>🏠</span><span style="font-size: 7px; margin-top: 2px;">Espaço</span></div>
+                                <div class="mock-nav-item"><span>🏋️‍♀️</span><span style="font-size: 7px; margin-top: 2px;">Treinar</span></div>
+                                <div class="mock-nav-item"><span>🍎</span><span style="font-size: 7px; margin-top: 2px;">Nutrir</span></div>
+                                <div class="mock-nav-item"><span>👥</span><span style="font-size: 7px; margin-top: 2px;">Círculo</span></div>
+                                <div class="mock-nav-item"><span>🏆</span><span style="font-size: 7px; margin-top: 2px;">Desafio</span></div>
+                                <div class="mock-nav-item"><span>👤</span><span style="font-size: 7px; margin-top: 2px;">Perfil</span></div>
                             </div>
                         </div>
                     </div>
@@ -350,7 +352,7 @@
                     <button class="showcase-tab active" data-screen="home">
                         <div class="tab-icon">🏠</div>
                         <div class="tab-info">
-                            <span class="tab-title">Dashboard Inicial</span>
+                            <span class="tab-title">Espaço</span>
                             <span class="tab-desc">Uma visão geral do seu dia: metas ativas, atalhos rápidos e sua sequência de hábitos do mês.</span>
                         </div>
                     </button>
@@ -358,23 +360,23 @@
                     <button class="showcase-tab" data-screen="treinos">
                         <div class="tab-icon">🏋️‍♀️</div>
                         <div class="tab-info">
-                            <span class="tab-title">Ficha de Treinos</span>
+                            <span class="tab-title">Treinar</span>
                             <span class="tab-desc">Lista de exercícios do dia organizada por séries, com cronômetro de descanso e vídeos de execução perfeita.</span>
                         </div>
                     </button>
                     
                     <button class="showcase-tab" data-screen="nutricao">
-                        <div class="tab-icon">🥗</div>
+                        <div class="tab-icon">🍎</div>
                         <div class="tab-info">
-                            <span class="tab-title">Planejador Nutricional</span>
+                            <span class="tab-title">Nutrir</span>
                             <span class="tab-desc">Cardápio completo estruturado com as porções certas. Substitua ingredientes com um único toque.</span>
                         </div>
                     </button>
                     
                     <button class="showcase-tab" data-screen="comunidade">
-                        <div class="tab-icon">💬</div>
+                        <div class="tab-icon">👥</div>
                         <div class="tab-info">
-                            <span class="tab-title">Comunidade Ativa</span>
+                            <span class="tab-title">Círculo</span>
                             <span class="tab-desc">Feed social privado para postar fotos do treino, bater papo, participar de tópicos de saúde e fazer amizades.</span>
                         </div>
                     </button>
@@ -382,7 +384,7 @@
                     <button class="showcase-tab" data-screen="desafio">
                         <div class="tab-icon">🏆</div>
                         <div class="tab-info">
-                            <span class="tab-title">Espaço do Desafio</span>
+                            <span class="tab-title">Desafio</span>
                             <span class="tab-desc">Área gamificada do desafio oficial com ranking em tempo real, tarefas diárias a cumprir e prêmios em disputa.</span>
                         </div>
                     </button>
@@ -390,7 +392,7 @@
                     <button class="showcase-tab" data-screen="perfil">
                         <div class="tab-icon">👤</div>
                         <div class="tab-info">
-                            <span class="tab-title">Perfil de Evolução</span>
+                            <span class="tab-title">Perfil</span>
                             <span class="tab-desc">Histórico completo de consistência, registro de medidas físicas e galeria privada de progresso fotográfico.</span>
                         </div>
                     </button>
@@ -577,12 +579,13 @@
                             </div>
                             
                             <!-- Virtual navigation elements inside screen -->
-                            <div class="mock-app-navbar">
-                                <div class="mock-nav-item active">🏠</div>
-                                <div class="mock-nav-item">🏋️‍♀️</div>
-                                <div class="mock-nav-item">🥗</div>
-                                <div class="mock-nav-item">🏆</div>
-                                <div class="mock-nav-item">👤</div>
+                            <div class="mock-app-navbar" style="justify-content: space-between; padding: 0 8px;">
+                                <div class="mock-nav-item active" id="mock-nav-home"><span>🏠</span><span style="font-size: 7px; margin-top: 2px;">Espaço</span></div>
+                                <div class="mock-nav-item" id="mock-nav-treinos"><span>🏋️‍♀️</span><span style="font-size: 7px; margin-top: 2px;">Treinar</span></div>
+                                <div class="mock-nav-item" id="mock-nav-nutricao"><span>🍎</span><span style="font-size: 7px; margin-top: 2px;">Nutrir</span></div>
+                                <div class="mock-nav-item" id="mock-nav-comunidade"><span>👥</span><span style="font-size: 7px; margin-top: 2px;">Círculo</span></div>
+                                <div class="mock-nav-item" id="mock-nav-desafio"><span>🏆</span><span style="font-size: 7px; margin-top: 2px;">Desafio</span></div>
+                                <div class="mock-nav-item" id="mock-nav-perfil"><span>👤</span><span style="font-size: 7px; margin-top: 2px;">Perfil</span></div>
                             </div>
                         </div>
                     </div>
