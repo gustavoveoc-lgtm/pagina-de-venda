@@ -716,6 +716,61 @@ img {
     color: var(--text-body);
 }
 
+/* Light background override for How it works section to create visual breathing space */
+#how-it-works {
+    background-color: #FFFFFF !important;
+}
+
+#how-it-works .solution-badge {
+    background: rgba(11, 5, 8, 0.05) !important;
+    color: #5A4B53 !important;
+    border-color: rgba(11, 5, 8, 0.1) !important;
+}
+
+#how-it-works h2 {
+    color: #0B0508 !important;
+}
+
+#how-it-works .text-center p {
+    color: #5A4B53 !important;
+}
+
+#how-it-works .step-card {
+    background: #FFFFFF !important;
+    border: 1px solid rgba(11, 5, 8, 0.08) !important;
+    box-shadow: 0 10px 30px rgba(11, 5, 8, 0.03);
+}
+
+#how-it-works .step-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent-rose) !important;
+    box-shadow: 0 15px 35px rgba(232, 165, 152, 0.18);
+}
+
+#how-it-works .step-card h3 {
+    color: #0B0508 !important;
+    font-weight: 700;
+}
+
+#how-it-works .step-card p {
+    color: #5A4B53 !important;
+}
+
+#how-it-works .step-badge {
+    color: rgba(232, 165, 152, 0.08) !important;
+}
+
+#how-it-works .step-card:hover .step-badge {
+    color: rgba(232, 165, 152, 0.22) !important;
+}
+
+#how-it-works .step-icon-box {
+    background: rgba(232, 165, 152, 0.06) !important;
+    border: 1px solid rgba(232, 165, 152, 0.25) !important;
+    color: var(--accent-rose) !important;
+    box-shadow: 0 4px 12px rgba(232, 165, 152, 0.05);
+}
+
 /* --- SECTION: WHAT YOU RECEIVE (BENEFITS GRID) --- */
 .benefits-grid {
     display: grid;
