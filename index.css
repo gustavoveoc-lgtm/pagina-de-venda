@@ -832,6 +832,32 @@ img {
     line-height: 1.5;
 }
 
+.benefit-card-blue {
+    background: #E8F2FC !important;
+    border: 1px solid rgba(13, 110, 253, 0.12) !important;
+    box-shadow: 0 10px 30px rgba(13, 110, 253, 0.05);
+}
+
+.benefit-card-blue:hover {
+    background: #DFECFA !important;
+    border-color: rgba(13, 110, 253, 0.25) !important;
+    box-shadow: 0 15px 35px rgba(13, 110, 253, 0.1) !important;
+}
+
+.benefit-card-blue h3 {
+    color: #0B0508 !important;
+}
+
+.benefit-card-blue p {
+    color: #4B5A6E !important;
+}
+
+.benefit-card-blue .benefit-icon {
+    background: rgba(13, 110, 253, 0.08) !important;
+    border: 1px solid rgba(13, 110, 253, 0.22) !important;
+    color: #0D6EFD !important;
+}
+
 /* --- SECTION: APP INTERACTIVE SHOWCASE --- */
 .app-showcase-grid {
     display: grid;
