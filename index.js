@@ -95,13 +95,13 @@ function initCheckoutDrawer() {
     const checkoutSuccess = document.getElementById('checkout-success');
     const checkoutInitialView = document.getElementById('checkout-initial-view');
     
-    // Order Bump pricing elements
+    // Order Bump pricing elements (removed in HTML, kept null-safe)
     const bumpCheckbox = document.getElementById('challenge-upsell');
     const totalLabel = document.getElementById('total-price-val');
     const bumpRow = document.getElementById('summary-row-challenge');
     
-    const BASE_PRICE = 45.90;
-    const CHALLENGE_PRICE = 19.99;
+    const BASE_PRICE = 65.80;
+    const CHALLENGE_PRICE = 0.00;
 
     function openDrawer() {
         backdrop.classList.add('active');
@@ -121,21 +121,17 @@ function initCheckoutDrawer() {
             checkoutForm.reset();
             if (bumpCheckbox) {
                 bumpCheckbox.checked = false;
-                updatePricing();
             }
+            updatePricing();
         }, 500);
     }
 
     function updatePricing() {
-        if (!bumpCheckbox) return;
-        
-        if (bumpCheckbox.checked) {
-            bumpRow.style.display = 'flex';
-            const total = BASE_PRICE + CHALLENGE_PRICE;
-            totalLabel.textContent = `R$ ${total.toFixed(2).replace('.', ',')}`;
-        } else {
-            bumpRow.style.display = 'none';
+        if (totalLabel) {
             totalLabel.textContent = `R$ ${BASE_PRICE.toFixed(2).replace('.', ',')}`;
+        }
+        if (bumpRow) {
+            bumpRow.style.display = 'none';
         }
     }
 
